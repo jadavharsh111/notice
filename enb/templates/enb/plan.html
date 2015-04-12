@@ -1,0 +1,179 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Travel Website</title>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap.min.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<!---script---->
+		<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+		<script src="js/jquery.bxslider.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.bxslider').bxSlider({
+						 auto: true,
+ 						 autoControls: true,
+						 minSlides: 4,
+						 maxSlides: 4,
+						 slideWidth:450,
+						 slideMargin: 10
+					});
+				});
+			</script>
+		<!---//script---->
+		<!---smoth-scrolling---->
+			<script type="text/javascript">
+				$(document).ready(function(){
+									$('a[href^="#"]').on('click',function (e) {
+									    e.preventDefault();
+									    var target = this.hash,
+									    $target = $(target);
+									    $('html, body').stop().animate({
+									        'scrollTop': $target.offset().top
+									    }, 1000, 'swing', function () {
+									        window.location.hash = target;
+									    });
+									});
+								});
+				$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+				$('#myTab a[href="#profile"]').tab('show') // Select tab by name
+$('#myTab a:first').tab('show') // Select first tab
+$('#myTab a:last').tab('show') // Select last tab
+$('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
+				</script>
+		<!---//smoth-scrlling---->
+		<!----start-top-nav-script---->
+		<script type="text/javascript" src="js/flexy-menu.js"></script>
+		<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+		<!----//End-top-nav-script---->
+		<!---webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---webfonts---->
+		<!--start slider -->
+	    <link rel="stylesheet" href="css/fwslider.css" media="all">
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script src="js/fwslider.js"></script>
+		<!--end slider -->
+		<!---calender-style---->
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<!---//calender-style---->
+  
+
+
+
+
+	</head>
+	<body>
+		
+			<div class="header">
+				<div class="wrap">
+				<!--- start-logo---->
+				<div class="logo">
+					<a href="#"><img src="images/" title="logo" /></a>                          <!--Modify here-->
+				</div>
+				<!--- //End-logo---->
+				<!--- start-top-nav---->
+				<div class="top-nav">
+						<ul class="flexy-menu thick orange">
+							<li class="active"><a href="index.html">Home</a></li>
+							
+							<li><a href="#plan">Plan your Travel</a></li>
+							<li><a href="#feedback">Feedback</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">Sign In</a></li>
+							
+						</ul>
+						
+				</div>
+				<!--- //End-top-nav---->
+				<div class="clear"> </div>
+			</div>
+			<!---//End-header---->
+		</div>
+		
+        <br><br>
+
+         <div class="container">
+         	   <h1 align="center">Plan Your Travel</h1>
+               
+               <div class="row">
+               	    <div class="col-lg-6">
+               	    	<p><b>Destination:</b>Ahmedabad</p>   
+
+
+               	    </div>
+               	    <div class="col-lg-6"><img src="images/map.png" width="200%" height="400%"></div>
+               <div class="row">
+                    <div class="col-lg-6">
+                    	<img src="images/hotel.png">
+                    </div>
+               	    <div class="col-lg-6"><h3 align="center">Best Offers </h3>
+                     <ul>
+                     	<li>ABC(Rate)</li>
+                     	<li>XYZ(Rate)</li>
+                     	<li>WJF(Rate)</li>
+                     </ul>
+                     <input type="submit" value="Book Now">
+               	     </div>
+               	    <div class="col-lg-6"></div>
+               </div>
+
+               <div class="row" style="font-size:28;font-weight:2;">
+               	    <h3 align="center">GI Tags</h3>
+                              <ul >
+                                 <font size="5">
+								<li>Sankheda Furniture</li>
+								<li>Agates of Cambay</li>
+								<li>Kutch Embroidery</li>
+								<li>Tangaliya Shawl</li>
+								<li>Surat Zari Craft</li>
+								<li>Gir Kesar Mango</li>
+								<li>Bhalia Wheat</li>
+								<li>Kachchh Shawls</li>
+								<li>Patan Patola</li>
+								</ul>
+								</font>
+               	     </div>
+               	     <div class="row">
+               	    <div class="col-lg-6">
+               	    	   <h3 align="center">Hire Guides </h3>
+                     <ul>
+                     	<li>MR.ABC(Contact)</li>
+                     	<li>MR.XYZ(Contact)</li>
+                     	<li>MR.WJF(Contact)</li>
+                     </ul>
+               	     </div>
+               	    </div>
+               	    <div class="row">
+               	    <div class="col-lg-6"><h3 align="center"></h3>
+                         <h3 align="center">Plan well crafted days with smart suggestions</h3>
+                         <p>Automatically create smart plans with detailed maps and transport info. Get smart recommendations to fill empty spots in your day.</p> 
+                         <img src="images/l1.png">    
+               	     </div>
+               	    <div class="col-lg-6">
+               	    	   <h3 align="center">Discover handpicked things to do </h3>
+                           <p>Pick from hand curated list of great things to do. Fresh local events and deals are updated daily. See tips and reviews from locals and travelers.</p>
+                           <img src="images/l2.png">
+               	     </div>
+               	    </div>
+               </div>
+         </div>
+
+        
+         
+
+		<script src="bootstrap.min.js"></script>
+    <script src="jquery-1.8.3.min"></script>
+	</body>
+</html>
+

@@ -1,0 +1,926 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Travel Website</title>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap.min.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<!---script---->
+		<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+		<script src="js/jquery.bxslider.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.bxslider').bxSlider({
+						 auto: true,
+ 						 autoControls: true,
+						 minSlides: 4,
+						 maxSlides: 4,
+						 slideWidth:450,
+						 slideMargin: 10
+					});
+				});
+			</script>
+		<!---//script---->
+		<!---smoth-scrolling---->
+			<script type="text/javascript">
+				$(document).ready(function(){
+									$('a[href^="#"]').on('click',function (e) {
+									    e.preventDefault();
+									    var target = this.hash,
+									    $target = $(target);
+									    $('html, body').stop().animate({
+									        'scrollTop': $target.offset().top
+									    }, 1000, 'swing', function () {
+									        window.location.hash = target;
+									    });
+									});
+								});
+				</script>
+		<!---//smoth-scrlling---->
+		<!----start-top-nav-script---->
+		<script type="text/javascript" src="js/flexy-menu.js"></script>
+		<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+		<!----//End-top-nav-script---->
+		<!---webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---webfonts---->
+		<!--start slider -->
+	    <link rel="stylesheet" href="css/fwslider.css" media="all">
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script src="js/fwslider.js"></script>
+		<!--end slider -->
+		<!---calender-style---->
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<!---//calender-style---->
+  
+
+
+
+
+	</head>
+	<body>
+		
+			<div class="header">
+				<div class="wrap">
+				<!--- start-logo---->
+				<div class="logo">
+					<a href="#"><img src="images/" title="logo" /></a>                          <!--Modify here-->
+				</div>
+				<!--- //End-logo---->
+				<!--- start-top-nav---->
+				<div class="top-nav">
+						<ul class="flexy-menu thick orange">
+							<li class="active"><a href="index.html">Home</a></li>
+							
+							<li><a href="#plan">Plan your Travel</a></li>
+							<li><a href="#feedback">Feedback</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">Sign In</a></li>
+							
+						</ul>
+						
+				</div>
+				<!--- //End-top-nav---->
+				<div class="clear"> </div>
+			</div>
+			<!---//End-header---->
+		</div>
+		<!----start-images-slider---->
+		<div class="images-slider">
+			<!-- start slider -->
+		    <div id="fwslider">
+		        <div class="slider_container">
+		            <div class="slide"> 
+		                <!-- Slide image -->
+		                   <img src="images/car1.jpg" alt=""/>
+		                <!-- /Slide image -->
+		                <!-- Texts container -->
+		                <div class="slide_content">
+		                    <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title"><font color='black'>To travel is to live</h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description">You Don't Need Magic to Disappear. All you need is a destination.</font></p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">
+		                        	<ul>
+		                        		<li><a class="mapbtn" href="#" style="color:black;"><font>Sign In </font></a></li>
+		                        		<li><a class="minfo" href="#" style="color:black;"><font>Register</font> </a></li>
+		                        		<div class="clear"> </div>
+		                        	</ul>
+		                        </div>
+		                    </div>
+		                </div>
+		                 <!-- /Texts container -->
+		            </div>
+		            <!-- /Duplicate to create more slides -->
+		            <div class="slide"> 
+		                <!-- Slide image -->
+		                   <img src="images/car2.jpg" alt=""/>
+		                <!-- /Slide image -->
+		                <!-- Texts container -->
+		                <div class="slide_content">
+		                    <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title"><font color='black'>To travel is to live</h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description">You Don't Need Magic to Disappear. All you need is a destination.</font></p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">
+		                        	<ul>
+		                        		<li><a class="mapbtn" href="#"style="color:black;"><font>Sign In </font></a></li>
+		                        		<li><a class="minfo" href="#"style="color:black;"><font>Register </font></a></li>
+		                        		<div class="clear"> </div>
+		                        	</ul>
+		                        </div></font>
+		                    </div>
+		                </div>
+		                 <!-- /Texts container -->
+		            </div>
+		            <div class="slide"> 
+		                <!-- Slide image -->
+		                   <img src="images/car3.jpg" alt=""/>
+		                <!-- /Slide image -->
+		                <!-- Texts container -->
+		                <div class="slide_content">
+		                    <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title"><font color='black'>To travel is to live</h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description">You Don't Need Magic to Disappear. All you need is a destination.</font></p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">
+		                        	<ul>
+		                        		<li><a class="mapbtn" href="#"style="color:black;"><font>Sign In</font></a></li>
+		                        		<li><a class="minfo" href="#"style="color:black;"><font>Register </font></a></li>
+		                        		<div class="clear"> </div>
+		                        	</ul>
+		                        </div></font>
+		                    </div>
+		                </div>
+		                 <!-- /Texts container -->
+		            </div>
+		            <div class="slide">
+		                <img src="images/car4.jpg" alt=""/>
+		                <div class="slide_content">
+		                     <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title"><font color='black'>To travel is to live</h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description">You Don't Need Magic to Disappear. All you need is a destination.</font></p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">
+		                        	<ul>
+		                        		<li><a class="mapbtn" href="#"style="color:black;"><font>Sign In</font> </a></li>
+		                        		<li><a class="minfo" href="#"style="color:black;"><font>Regsiter </font></a></li>
+		                        		<div class="clear"> </div>
+		                        	</ul>
+		                        </div></font>
+		                    </div>
+		                </div>
+		            </div>
+		            <!--/slide -->
+		        </div>
+		        <div class="timers"> </div>
+		        <div class="slidePrev"><span> </span></div>
+		        <div class="slideNext"><span> </span></div>
+		    </div>
+		    <!--/slider -->
+		</div>
+             
+          <!-- Find Place-->
+
+		<!----start-find-place---->
+		<div class="container" id="plan">
+		<h1 class="center">Plan Your Travel</h1>
+		<div class="find-place">
+			<div class="wrap">
+				<div class="p-h">
+					<span>FIND YOUR</span>
+					<label>HOLYDAYS</label>
+				</div>
+				<!---strat-date-piker---->
+				  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+				  <script>
+				  $(function() {
+				    $( "#datepicker" ).datepicker();
+				  });
+				  </script>
+				<!---/End-date-piker---->
+				<div class="p-ww">
+					<form method="get" action="http://maps.google.com/maps" target="_blank">
+						<span> From</span>
+						<input class="dest" type="text" value="Source" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Distination';}">
+						<span> To</span>
+						<input class="dest" type="text" value="Destination" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Distination';}"><br>
+						<span> When</span>
+						<input class="date" id="datepicker" type="text" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
+						<span> Mode of Travel</span>
+						<select name="cars" class="dropdown">
+						<option value="volvo">Flight</option>
+						<option value="saab">Train</option>
+						<option value="fiat">Bus</option>
+						<option value="audi">Car</option>
+						</select>
+						<input type="submit" value="Search" />
+					</form>
+
+					<div>
+						   
+					</div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+
+		<!----//End-find-place---->
+
+        
+         
+		<!--Popular Destinatios--->
+		<div class="offers">
+			
+			<!-- start content_slider -->
+			<!-- FlexSlider -->
+			 <!-- jQuery -->
+			  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+			  <!-- FlexSlider -->
+			  <script defer src="js/jquery.flexslider.js"></script>
+			  <script type="text/javascript">
+			    $(function(){
+			      SyntaxHighlighter.all();
+			    });
+			    $(window).load(function(){
+			      $('.flexslider').flexslider({
+			        animation: "slide",
+			        animationLoop: true,
+			        itemWidth:250,
+			        itemMargin: 5,
+			        start: function(slider){
+			          $('body').removeClass('loading');
+			        }
+			      });
+			    });
+			  </script>
+
+
+			  <div class="container" id="feedback">
+			  	    
+
+			  </div>
+              <div class="container">
+              	  <h1 class="center">Special Places this Holidays</h1>
+              </div>
+			<!-- Place somewhere in the <body> of your page -->
+				 <section class="slider">
+		        <div class="flexslider carousel">
+		          <ul class="slides">
+		            <li onclick="location.href='#';">
+		  	    	    <img src="images/sp1.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#"></a></h4>
+			  	    	    	 	<span>Udaipur</span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/sp2.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Amritsar</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/sp3.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Haridwar</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/sp4.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Jaisalmar</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		            <li onclick="location.href='#';">
+		  	    	    <img src="images/sp5.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Ooty</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/sp6.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Goa</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/sp7.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Mount Abu</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/sp8.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Agra</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		             
+		          </ul>
+		        </div>
+		      </section>
+              <!-- //End content_slider -->
+		</div>
+		<!----//Popular Destination ends---->
+
+        <!--Special packages-->
+         
+
+        <!--Special Packages ends-->
+           <div class="container" id="feedback">
+			  	    
+
+			  </div>
+              <div class="container">
+              	  <h1 class="center">Best Holiday Package this Season</h1>
+              </div>
+			<!-- Place somewhere in the <body> of your page -->
+				 <section class="slider">
+		        <div class="flexslider carousel">
+		          <ul class="slides">
+		            <li onclick="location.href='#';">
+		  	    	    <img src="images/bp1.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Exotic Kerela (Rs 9577)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/bp2.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Manali Deluxe(Rs. 8500)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/bp3.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Spledid Gangtok(Rs 15000)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/bp4.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Queen of the Hils Darjeeling(Rs 5199)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		            <li onclick="location.href='#';">
+		  	    	    <img src="images/bp5.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Fantastic Himalayas(Rs 8029)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/bp6.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Marvellous Kullu(Rs 7699)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/bp7.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Tranquillant Nainiital(Rs 8999)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/bp8.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Majestic Manipur(Rs 4949)</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		             
+		          </ul>
+		        </div>
+		      </section>
+              <!-- //End content_slider -->
+		</div>
+
+		<!--Nearest Places from surat-->
+		<div class="container">
+
+		 <img src="images/np.png"></img> 
+         <div class="container" id="feedback">
+			  	    
+
+			  </div>
+              <div class="container">
+              	  <h1 class="center">Nearest Places from Surat</h1>
+              </div>
+			<!-- Place somewhere in the <body> of your page -->
+				 <section class="slider">
+		        <div class="flexslider carousel">
+		          <ul class="slides">
+		            <li onclick="location.href='#';">
+		  	    	    <img src="images/np1.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Wilson Hills</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/np2.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Girnar</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/np3.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Palanpur</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/np4.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Saputara</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		            <li onclick="location.href='#';">
+		  	    	    <img src="images/np5.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Pavagadh</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/np6.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Silvassa</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/np7.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Sasan Gir</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		  	    		 <li onclick="location.href='#';">
+		  	    	    <img src="images/np8.jpg" />
+		  	    	    <!----place-caption-info---->
+		  	    	    <div class="caption-info">
+		  	    	    	 <div class="caption-info-head">
+		  	    	    	 	<div class="caption-info-head-left">
+			  	    	    	 	<h4><a href="#">Somnath</a></h4>
+			  	    	    	 	
+		  	    	    	 	</div>
+		  	    	    	 	<div class="caption-info-head-right">
+		  	    	    	 		<span> </span>
+		  	    	    	 	</div>
+		  	    	    	 	<div class="clear"> </div>
+		  	    	    	 </div>
+		  	    	    </div>
+		  	    	     <!----//place-caption-info---->
+		  	    		</li>
+		             
+		          </ul>
+		        </div>
+		      </section>
+              <!-- //End content_slider -->
+		</div>
+		</div>
+		<!--NEarest surat ends-->
+		<!---start-holiday-types---->
+			<div class="holiday-types">
+				<div class="wrap">
+					<div class="holiday-type-head">
+						<h3>Holidays Type</h3>
+						<span>get explore your dream to travel the world!</span>
+					</div>
+					<div class="holiday-type-grids">
+						<div class="holiday-type-grid" onclick="location.href='#';">
+							<span class="icon1"> </span>
+							<a href="#">Cruise</a>
+						</div>
+						<div class="holiday-type-grid" onclick="location.href='#';">
+							<span class="icon2"> </span>
+							<a href="#">City Breaks</a>
+						</div>
+						<div class="holiday-type-grid" onclick="location.href='#';">
+							<span class="icon3"> </span>
+							<a href="#">Honeymoon</a>
+						</div>
+						<div class="holiday-type-grid" onclick="location.href='#';">
+							<span class="icon4"> </span>
+							<a href="#">Adventure</a>
+						</div>
+						<div class="holiday-type-grid" onclick="location.href='#';">
+							<span class="icon5"> </span>
+							<a href="#">Safari</a>
+						</div>
+						<div class="holiday-type-grid" onclick="location.href='#';">
+							<span class="icon6"> </span>
+							<a href="#">Beach</a>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				</div>
+		<!---//End-holiday-types---->
+		<!----//End-images-slider---->
+		<!----start-clients---->
+		<div class="clients">
+			<div class="client-head">
+				<h3>Happy Clients</h3>
+				<span>what customer say about us and why love our services!</span>
+			</div>
+			<div class="client-grids">
+				<ul class="bxslider">
+				  <li>
+				  	<p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+				  	<a href="#">Client Name</a>
+				  	<span>United States</span>
+				  	<label> </label>
+				  </li>
+				  <li>
+				  	<p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+				  	<a href="#">Client Name</a>
+				  	<span>United States</span>
+				  	<label> </label>
+				  </li>
+				  <li>
+				  	<p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+				  	<a href="#">Client Name</a>
+				  	<span>United States</span>
+				  	<label> </label>
+				  </li>
+				  <li>
+				  	<p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+				  	<a href="#">Client Name</a>
+				  	<span>United States</span>
+				  	<label> </label>
+				  </li>
+				  <li>
+				  	<p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+				  	<a href="#">Client Name</a>
+				  	<span>United States</span>
+				  	<label> </label>
+				  </li>
+				</ul>
+			</div>
+		</div>
+		<!----//End-clients---->
+		<!----start-footer---->
+		<div class="footer">
+			<div class="wrap">
+			<div class="footer-grids">
+				<div class="footer-grid Newsletter">
+					<h3>News letter </h3>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
+					<form>
+						<input type="text" placeholder="Subscribes.." /> <input type="submit" value="GO" />
+					</form>
+				</div>
+				<div class="footer-grid Newsletter">
+					<h3>Latest News </h3>
+					<div class="news">
+						<div class="news-pic">
+							<img src="images/f01.jpg" title="news-pic1" /> 
+						</div>
+						<div class="news-info">
+							<a href="#">Postformat Gallery: Multiple images</a>
+							<span>December 12, 2012 - 9:11 pm</span>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="news">
+						<div class="news-pic">
+							<img src="images/f01.jpg" title="news-pic1" /> 
+						</div>
+						<div class="news-info">
+							<a href="#">Postformat Gallery: Multiple images</a>
+							<span>December 12, 2012 - 9:11 pm</span>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="footer-grid tags">
+					<h3>Tags</h3>
+					<ul>
+						<li><a href="#">Agent login</a></li>
+						<li><a href="#">Customer Login</a></li>
+						<li><a href="#">Not a Member?</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">New Horizons</a></li>
+						<li><a href="#">Lanscape</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Nice</a></li>
+						<li><a href="#">Some</a></li>
+						<li><a href="#">Portrait</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="footer-grid address">
+					<h3>Address </h3>
+					<div class="address-info">
+						<span>DieSachbearbeiter Schonhauser </span>
+						<span>Allee 167c,10435 Berlin Germany</span>
+						<span><i>E-mail:</i><a href="mailto:moin@blindtextgenerator.de">moin@blindtextgenerator.de</a></span>
+					</div>
+					<div class="footer-social-icons">
+						<ul>
+							<li><a class="face1 simptip-position-bottom simptip-movable" data-tooltip="facebook" href="#"><span> </span></a></li>
+							<li><a class="twit1 simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"><span> </span></a></li>
+							<li><a class="tub1 simptip-position-bottom simptip-movable" data-tooltip="tumblr" href="#"><span> </span></a></li>
+							<li><a class="pin1 simptip-position-bottom simptip-movable" data-tooltip="pinterest" href="#"><span> </span></a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+		</div>
+		<!----//End-footer---->
+		<!---start-subfooter---->
+		<div class="subfooter">
+			<div class="wrap">
+				<ul>
+					<li><a href="index.html">Home</a><span>::</span></li>
+					<li><a href="destinations.html">Destinations</a><span>::</span></li>
+					<li><a href="criuses.html">Criuses</a><span>::</span></li>
+					<li><a href="destinations.html">Specils</a><span>::</span></li>
+					<li><a href="destinations.html">Holidays</a><span>::</span></li>
+					<li><a href="blog.html">Blog</a><span>::</span></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<div class="clear"> </div>
+				</ul>
+				<p class="copy-right">Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<a class="to-top" href="#header"><span> </span> </a>
+			</div>
+		</div>
+		<!---//End-subfooter---->
+		<!----//End-wrap---->
+
+
+		<script src="bootstrap.min.js"></script>
+    <script src="jquery-1.8.3.min"></script>
+	</body>
+</html>
+

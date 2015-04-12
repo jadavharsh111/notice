@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Apni Savari</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Apni Savari</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/enb">Home</a></li>
+        <li class="active"><a href="/enb/submit">Submit</a></li>
+      <li class="active"><a href="/enb/tag">Tag</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search by<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">flight</a></li>
+            <li><a href="#">car</a></li>
+            <li><a href="#">bus</a></li>
+            <li><a href="#">ship</a></li>
+            <li><a href="#">other</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+{% if user.is_authenticated %}
+
+          <a href="/enb/logout"><span class="glyphicon glyphicon-log-out"></span> Log-Out</a>
+
+
+{% else %}
+<a href="/enb/login"><span class="glyphicon glyphicon-log-in"></span> Log-In</a>
+
+{% endif %}</li>
+        
+      </ul>
+    </div>
+  </div>
+
+ </nav>
+  
+
+  <div class="jumbotron">
+    {% for post in posts %}
+    <div class="row">
+      <div class="col-xs-12 col-md-2">
+        {{post.user}}</br>
+      </div>
+
+      <div class="col-xs-12 col-md-10" align="justify">
+        
+        <!-- Posts  -->
+        <ul>
+           
+                <div class="title">{{ post.topic }}</div>
+                <ul>
+                    <div class="time">{{ post.pub_date }}</div>
+                    <div class="body">{{ post.desc|linebreaks }}</div>
+                  
+                    {%if post.img %}
+
+                    <img src="/enb/media/{{post.img}}" width= 500px height=300px/>
+                    {% endif %}
+
+                    
+                </ul>
+           
+        </ul>
+      </div>
+       {% endfor %}
+  </div>
+
+
+</div>
+
+</body>
+</html>

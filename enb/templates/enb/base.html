@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Good to Go | {% block title %}{% endblock %}</title>
+{% load staticfiles %}
+
+</head>
+<body>
+<div id="nav">
+<a href="/enb/">home</a> |
+{% if user.is_authenticated %}
+welcome <a href="/enb/user/{{ user.username }}">{{ user.username }}</a>
+<a href="/enb/submit/">submit</a> |
+(<a href="/enb/logout">logout</a>)
+{% else %}
+<a href="/enb/login/">login</a> |
+<a href="/enb/register/">register</a>
+{% endif %}
+</div>
+<h1>{% block head %}{% endblock %}</h1>
+{% block content %}{% endblock %}
+</body>
+</html>

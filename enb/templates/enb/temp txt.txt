@@ -1,0 +1,10 @@
+"{% static 'enb/' %}"
+"{% static 'enb/js/jquery-ui.min.js' %}"
+
+<script src="{% static 'enb/js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'enb/js/css3-mediaqueries.js' %}"></script>
+<script src="{% static 'enb/js/fwslider.js' %}"></script>
+		<script src="js/"></script>
+		<script src="js/"></script>
+
+<a href="/enb/user/{{ user.username }}">{{ user.username }}</a>

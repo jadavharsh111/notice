@@ -1,0 +1,6 @@
+{% extends "good/base.html" %}
+{% block title %}Tag: {{ tag_name|escape }}{% endblock %}
+{% block head %}Posts for tag: {{ tag_name|escape }}{% endblock%}
+{% block content %}
+{% include "good/pub_list.html" %}
+{% endblock %}
